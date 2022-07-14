@@ -26,25 +26,33 @@ html, body {
 
 .list{
     display: flex;
-    flex:1;
-    justify-content: space-between;
+    margin-left: auto;
+    color: #E5E7EB;
+    padding: 0 100px 0 0;
+}
+
+.list > li{
     list-style: none;
     font-size: 18px;
-    color: #E5E7EB;
+    padding: 10px;
 }
 
 .hero-main{
     display: flex;
     flex: 1 1 25%;
-    justify-content: space-evenly;
-    padding: 50px 0 100px 0;
-    gap: 5%;
-
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 .main1 {
     color: #E5E7EB;
-    flex: 1 1 25%;  
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-basis: 400px;
+    margin-right: 50px;
+
 }
 
 .main-text{
@@ -52,21 +60,25 @@ html, body {
 }
 
 .button{
+    display: block;
     background-color: #3882f6;
     color: #e5e7eb;
     border-radius: 0.5em;
-    width: 15%;
+    width: 25%;
     border: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
 }
 
-.main-title h3{
+.main-title{
     font-size: 48px;
 }
 
 .main2{
     background-color: #E5E7EB;
     text-align: center;
-    flex: 1 1 25%
+    flex-basis: 400px;
 }
 
 .body{
@@ -85,15 +97,14 @@ html, body {
 
 .blue-boxes{
     display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    gap:5%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blue-boxes > div {
    display: flex;
    flex-direction: column;
-   flex: 1 1 200px;
+   align-items: center;
 }
 
 .blue-boxes > div > div {
@@ -101,7 +112,12 @@ html, body {
     border-color: #3882f6;
     border-radius: 0.5em;
     height: 10rem;
-    width: 100%;
+    width:  50%;
+}
+
+.blue-boxes > div >  p {
+    width: 50%;
+    text-align: center;
 }
 
 .quote{
