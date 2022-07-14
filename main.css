@@ -73,21 +73,35 @@ html, body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 5% 10% 10% 10%;
+    padding: 0 10% 10% 10%;
+}
+
+.body > h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
 }
 
 .blue-boxes{
     display: flex;
-    align-items: center;
     flex: 1;
-    gap:4%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap:5%;
 }
 
 .blue-boxes > div {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 200px;
+}
+
+.blue-boxes > div > div {
     border-style: solid;
     border-color: #3882f6;
     border-radius: 0.5em;
+    height: 10rem;
+    width: 100%;
 }
 
 .quote{
