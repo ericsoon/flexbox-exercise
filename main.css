@@ -1,62 +1,101 @@
-#container{
-    display: flex;
-    flex-direction: column;
+html, body {
+    font-family: 'Inter', sans-serif;
 }
 
-#hero{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero{
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+    padding: 0 70px 0 70px;
+    flex:1;
 }
 
-#header{
+.header{
     display: flex;
-    justify-content: center;
-    gap:50%;
-}
-
-#hero #header h3{
-    display: flex;
-    size: 24px;
+    justify-content: space-between;
     color: #F9FAF8;
+    gap:40%;
 }
+
 
 .list{
     display: flex;
-    gap:5%;
+    flex:1;
+    justify-content: space-between;
     list-style: none;
-    size: 18px;
+    font-size: 18px;
     color: #E5E7EB;
 }
 
-#hero-main{
+.hero-main{
     display: flex;
-    justify-content: center;
-    gap:5%;
+    flex: 1 1 25%;
+    justify-content: space-evenly;
+    padding: 50px 0 100px 0;
+    gap: 5%;
+
 }
 
-#main-text{
+.main1 {
+    color: #E5E7EB;
+    flex: 1 1 25%;  
+}
+
+.main-text{
     size: 48px;
 }
 
-#main1 {
-    size: 18px;
-    color: #E5E7EB;  
+.button{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 0.5em;
+    width: 15%;
+    border: none;
 }
 
-#main2{
-    background-color: #E5E7EB;
+.main-title h3{
+    font-size: 48px;
 }
 
-#body{
-    background-color: white;
+.main2{
+    background-color: #E5E7EB;
+    text-align: center;
+    flex: 1 1 25%
 }
-#quote{
+
+.body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10% 10% 10%;
+}
+
+.blue-boxes{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap:4%;
+    justify-content: space-between;
+}
+
+.blue-boxes > div {
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 0.5em;
+}
+
+.quote{
     background-color: #E5E7EB;
 }
-#buttons{
+.buttons{
     background-color: white;
 }
-#footer{
+.footer{
     background-color: #1F2937;
 }
